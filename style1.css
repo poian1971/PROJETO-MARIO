@@ -1,0 +1,113 @@
+/* Importação de fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* Plano de fundo escuro com degradê sutil e elegante */
+  background: radial-gradient(circle at top, #1f2338 0%, #0b0d14 100%);
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Seção Principal */
+.nossos-servicos {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  background: rgba(18, 22, 36, 0.85);
+  border: 2px solid #2a3148;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+/* Título Principal com destaque estilo Mario */
+.nossos-servicos h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fbd000; /* Amarelo Moeda */
+  text-shadow: 2px 2px 0px #e52521, 4px 4px 0px #000000; /* Sombra 3D vermelha */
+  margin-bottom: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Texto Introdutório */
+.nossos-servicos > p {
+  font-size: 1.1rem;
+  color: #d1d5db;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 35px auto;
+  line-height: 1.6;
+}
+
+/* Organização da Lista em Grade / Cards */
+.nossos-servicos ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 0;
+}
+
+/* Cartão de Cada Serviço */
+.nossos-servicos li {
+  background: linear-gradient(145deg, #1e2436, #141824);
+  border: 2px solid #2e3650;
+  border-radius: 12px;
+  padding: 25px;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Faixa temática colorida no topo do cartão (Vermelho e Verde Mario/Luigi) */
+.nossos-servicos li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #e52521, #43b047);
+  opacity: 0.8;
+}
+
+/* Efeito ao passar o mouse sobre o cartão */
+.nossos-servicos li:hover {
+  transform: translateY(-8px);
+  border-color: #fbd000;
+  box-shadow: 0 12px 25px rgba(251, 208, 0, 0.2);
+}
+
+/* Título de cada Serviço */
+.nossos-servicos h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Ícone de Chave Inglesa antes de cada título */
+.nossos-servicos h3::before {
+  content: '🔧';
+  font-size: 1.5rem;
+}
+
+/* Descrição do Serviço */
+.nossos-servicos li p {
+  font-size: 0.95rem;
+  color: #a0aec0;
+  line-height: 1.6;
+}
